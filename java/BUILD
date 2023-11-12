@@ -10,5 +10,6 @@ java_binary(
 
 java_binary(
     name = "Greeting",
-    srcs = glob(["src/main/java/com/example/Greeting.java"])
+    srcs = glob(["src/main/java/com/example/Greeting.java"]),
+    visibility = ["//src/main/java/com/example/cmdline:__pkg__"],
 )
