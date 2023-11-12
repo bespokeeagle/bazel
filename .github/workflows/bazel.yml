@@ -23,7 +23,7 @@ jobs:
       - name: Install JDK
         run: sudo apt install default-jdk
       - name: build
-        run: "cd java && bazel build //:ProjectRunner"
+        run: "cd java && bazel build //:ProjectRunner && bazel build //src/main/java/com/example/cmdline:runner"
 
 
 
